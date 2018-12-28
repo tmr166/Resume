@@ -2,7 +2,8 @@
 
 html, body {
    /* Import: Font: ZCOOL XiaoWei */
-   font-family: 'ZCOOL XiaoWei', serif;   
+   font-family: 'ZCOOL XiaoWei', serif; 
+   text-shadow: 2px 2px #ddd; 
  }
 
 /* misc */
@@ -112,4 +113,5 @@ a:visited {
    padding-top: 5px;
    color: white;
    text-align: center;
+   text-shadow: none;
 }
