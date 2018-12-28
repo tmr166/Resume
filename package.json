@@ -1,0 +1,29 @@
+{
+  "name": "resume1",
+  "version": "1.0.0",
+  "description": "practice resume",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmr166/Resume.git"
+  },
+  "author": "Tiffhanie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmr166/Resume/issues"
+  },
+  "homepage": "https://github.com/tmr166/Resume#readme",
+  "keywords": [
+    "practice",
+    "resume"
+  ],
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9"
+  },
+  "devDependencies": {}
+}
