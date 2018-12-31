@@ -6,17 +6,17 @@ html, body {
    text-shadow: 2px 2px #ddd; 
  }
 
+ /* test edits */
+.test-border {
+   border: solid black;
+}
+
 /* misc */
 .outer {
    display: flex;
    flex-direction: column; 
 }
-.header-line{
-   height: 1px;
-   width: 400px;
-   border-top: 1px solid #000;
-   margin: -1;
-}
+
 
 /* pink */
 .pink-background {
@@ -58,11 +58,12 @@ html, body {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   margin-left: -1%;
-   margin-right: -1%;
+   margin-left: -1%;;
+   margin-right: 0;
    padding-top: 30px;
    padding-bottom: 30px;
  }
+
  /* anchor | links */
 a {
    text-decoration: none;
@@ -76,11 +77,19 @@ a:visited {
  a:hover {
    color: #000000aa;
  }
+
  /* Header */
 .header {
    text-align: center;
-   font: 60px bold;
+   font: 70px bold;
  }
+
+.header-line {
+   height: 1px;
+   width: 400px;
+   border-top: 1px solid #000;
+   margin: -1;
+}
 
 /* Navigation Bar */
 .navi {
