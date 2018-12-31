@@ -3,34 +3,77 @@
 <head>
     <title>Homepage</title>
     <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="alignment.css">
     <link rel="stylesheet" type="text/css" href="fun.css">
     <!--Import: Font: ZCOOL XiaoWei-->
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
 </head>
 <body>
-
-<div class="outer">
-    <div class="header">Welcome</div>
-    <hr class="header-line">
-    <div class="navi">
-        <a class="content" href="/">Home</a>
-        <a class="content" href="about.html">About Me</a>
-        <a class="content" href="contact.html">Contact Info</a>
-        <a class="content" href="/fun">Fun Practice</a>
+    <div class="outer no-text-shadow">
+        <div class="header">Welcome</div>
+        <hr class="header-line">
+        <div class="navi">
+            <a class="content" href="/">Home</a>
+            <a class="content" href="about.html">About Me</a>
+            <a class="content" href="contact.html">Contact Info</a>
+            <a class="content" href="/fun">Fun Practice</a>
+        </div>
+        <!-- Image Hover Overlay Styling -->
+        <div class="full-width column content pink-background pink-shadow">
+            <h2 class="center margin-bottom-0 margin-top--10">Image Styling</h2>
+            <hr class="header-line">
+            <div class="center">
+                <div class="hover-image ">
+                    <img class="pic-default" src="fun.png" alt="fun">
+                    <div class="shift-right overlay">
+                        <div class="overlay-text">Overlay</div>
+                    </div>
+                </div>
+                <div class="hover-image">
+                    <img class="pic-default" src="fun.png" alt="fun">
+                    <div class="shift-right-9 middle">
+                        <div class="fade-text">Fade-In</div>
+                    </div>
+                </div>
+                <div class="hover-image">
+                    <img class="pic-default" src="fun.png" alt="fun">
+                    <div class="shift-right-9 slide-vertical">
+                        <div class="slide-text">Slide-Vertical</div>
+                    </div>
+                </div>
+                <div class="hover-image">
+                    <img class="pic-default" src="fun.png" alt="fun">
+                    <div class="shift-right-9 slide-horizontal">
+                        <div class="slide-text">Slide-Horizontal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Image Modal -->
+        <div class="full-width column content ">
+            <div class="center">
+                <div class="hover-image">
+                    <img class="pic-default" id="outside-modal-img" src="fun.png" alt="fun">
+                    <div id="myModal" class="modal">
+                        <span class="close">×</span>
+                        <img class="modal-content" id="inside-modal-img">
+                        <div id="caption">Hello</div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="full-width column content pink-background pink-shadow">
+            <div class="center">
+                <p>content</p>
+            </div>
+        </div>
+        <div class="bottom"></div>
+        <div class="footer dark-pink-background pink-shadow">
+            <div class="footer-content">
+            footer  
+            </div>   
+        </div>
     </div>
-    <div class="full-width column content pink-background pink-shadow">
-        <img class="pic-default" src="fun.png" alt="fun">
-    </div>
-    <div class="full-width column content ">
-        <img class="pic-default" src="fun.png" alt="fun">
-    </div> 
-    <div class="bottom"></div>
-    <div class="footer dark-pink-background pink-shadow">
-        <div class="footer-content">
-          footer  
-        </div>   
-    </div>
-</div>
-
+    <script type="text/javascript" src="fun.js"></script>
 </body>
-</html>
+</html>   

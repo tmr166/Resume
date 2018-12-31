@@ -50,39 +50,25 @@ html, body {
    justify-content: center;
 }
 
-.padding {
-   padding: 25px;
-}
-
-.full-width {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   margin-left: -1%;;
-   margin-right: 0;
-   padding-top: 30px;
-   padding-bottom: 30px;
- }
-
- /* anchor | links */
-a {
+  /* anchor | links */
+  a {
    text-decoration: none;
- }
+}
 a:link {
    color: black;
- }
+}
 a:visited {
    color: black;
- }
- a:hover {
+}
+a:hover {
    color: #000000aa;
- }
+}
 
  /* Header */
 .header {
    text-align: center;
    font: 70px bold;
- }
+}
 
 .header-line {
    height: 1px;
@@ -102,10 +88,30 @@ a:visited {
    margin-top:5px;
    margin-bottom: 15px;
  }
+
+/* Text | Content */
 .content{
    padding-left: 10px;
    padding-right: 10px;
 }
+
+h1 {
+   margin-top: -10px;
+   font-size: 38px;
+}
+
+.content h2 {
+   font-size: 40px;
+}
+
+.content h3 {
+   font-size: 25px;
+}
+
+.no-text-shadow {
+   text-shadow: none;
+}
+
 /* Footer and Bottom*/
 .bottom {
    height:50px;
