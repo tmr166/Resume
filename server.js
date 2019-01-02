@@ -6,12 +6,18 @@ var path = require("path");
 //include Folders
 app.use(express.static('public'));    //CSS Folder
 app.use(express.static('public/images'));   //Images Folder
-app.use(express.static('javascript'));    //CSS Folder
+app.use(express.static('javascript'));    //Javascript Folder
+app.use(express.static('node_modules/jquery/src'));    //JQuery Folder
+
 
 
 // Get Requests
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname+'/app/views/index.html'));
+});
+
+app.get('/about', function (req, res) {
+  res.sendFile(path.join(__dirname+'/app/views/about.html'));
 });
 
 app.get('/fun', function (req, res) {

@@ -7,6 +7,8 @@ var modalImg = document.querySelector("#inside-modal-img");
 modalImg.src = img.src;   //set modal image to image clicked
 img.onclick = function(){
   modal.style.display = "block";
+  modalImg.style.height = "50%";
+  modalImg.style.width = "auto";
 }
 
 // Get the <span> element that closes the modal

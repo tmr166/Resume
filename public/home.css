@@ -1,20 +1,35 @@
-.content-details{
-    display: flex;
-    flex-direction: row;
+
+/* Profile */
+.profile{
+    transition: .5s ease;
 }
 
 .profile-pic{
     max-height: 300px;
-    margin-left: -150px;
-    margin-top: -10px;
-    margin-bottom:-10px;
+    margin-left: 50px;
+    margin-bottom:-30px;
 }
 
 .profile-details {
-    padding-left: 70px;
+    position: relative;
+    margin-left: 70px;
+    width: 500px;
 }
 
-.profile-details p {
+.profile-details h1 {
+    margin-top: 100px;
+    transition: .5s ease;
+}
+
+.profile-line{
+    height: 1px;
+    width: 330px;
+    border-top: 1px solid #222;
+    margin-top: -20px;
+    margin-left: 0px;
+}
+
+.profile-paragraph {
     max-width: 500px;
     font-size: 20px;
     text-shadow: none;
@@ -25,13 +40,36 @@
     box-shadow:         3px 3px 5px 10px #ffffff55;
 }
 
-.profile-line{
-    height: 1px;
-    width: 330px;
-    border-top: 1px solid #222;
-    margin-top: -10px;
-    margin-left: 0px;
- }
+/* Profile:Hover */
+.profile:hover {
+    margin-left:-100px;
+}
+
+.profile:hover h1{
+    margin-top: 0px;
+}
+
+.profile-slide-vertical {
+    position: absolute;
+    bottom: 0;       /*Slide top to bottom: 100% | Slide bottom to top: 0*/
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+
+.profile:hover .profile-details .profile-slide-vertical {
+    bottom: 0;
+    height: 220px;
+}
+
+/* Content */
+.content-details{
+    display: flex;
+    flex-direction: row;
+}
 
 .content-pic{
     width: 120px;
