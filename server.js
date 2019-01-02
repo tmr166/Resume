@@ -7,7 +7,7 @@ var path = require("path");
 app.use(express.static('public'));    //CSS Folder
 app.use(express.static('public/images'));   //Images Folder
 app.use(express.static('javascript'));    //Javascript Folder
-app.use(express.static('node_modules/jquery/src'));    //JQuery Folder
+app.use(express.static('node_modules/jquery/dist'));    //JQuery Folder
 
 
 

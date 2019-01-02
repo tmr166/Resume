@@ -1,20 +1,21 @@
-// Get the modal
-var modal = document.querySelector('#myModal');
-            
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.querySelector('#outside-modal-img');
-var modalImg = document.querySelector("#inside-modal-img");
-modalImg.src = img.src;   //set modal image to image clicked
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.style.height = "50%";
-  modalImg.style.width = "auto";
-}
+$("#inside-modal-img").attr("src", $("#outside-modal-img").attr("src")); //set modal image to image clicked
 
-// Get the <span> element that closes the modal
-var span = document.querySelector(".close");
+$(document).ready(function(){
+  $('#outside-modal-img').click(function(){
+    $("#myModal").css({
+      display: "block"
+    });
+    $("#inside-modal-img").css({
+      height: "50%",
+      width: "auto"
+    });
+  });
+});
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+$(document).ready(function(){
+  $('.close').click(function(){
+      $("#myModal").css({
+        display: "none"
+      });
+  });
+});
