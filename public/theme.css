@@ -1,5 +1,11 @@
 /* theme color: https://www.colorhexa.com/b76e79 */
 
+:root {
+   --pink-color: #d0a1aabb;
+   --dark-pink-color: #914853;   
+ }
+
+
 html, body {
    /* Import: Font: ZCOOL XiaoWei */
    font-family: 'ZCOOL XiaoWei', serif; 
@@ -23,34 +29,17 @@ html, body {
 
 /* pink */
 .pink-background {
-   background: #d0a1aabb;
+   background: var(--pink-color);
 }
 
 .dark-pink-background {
-   background: #914853;
+   background:  var(--dark-pink-color);
 }
 
 .pink-shadow{
-   -moz-box-shadow:    3px 3px 5px 6px #d0a1aabb;
-   -webkit-box-shadow: 3px 3px 5px 6px #d0a1aabb;
-   box-shadow:         3px 3px 5px 6px #d0a1aabb;
-}
-
-/* alignment shortcuts */
-
-.row {
-   display: flex;
-   flex-direction: row;
-}
-
-.column {
-   display: flex;
-   flex-direction: column;
-}
-
-.center {
-   display: flex;
-   justify-content: center;
+   -moz-box-shadow:    3px 3px 5px 6px var(--pink-color);
+   -webkit-box-shadow: 3px 3px 5px 6px var(--pink-color);
+   box-shadow:         3px 3px 5px 6px var(--pink-color);
 }
 
 /* anchor | links */
@@ -113,6 +102,39 @@ h1 {
 
 .no-text-shadow {
    text-shadow: none;
+}
+
+.text-center {
+   text-align: center;
+}
+
+/* ------------------------------------------------------ */
+/*Pagination*/
+
+.pagination {
+   display: inline-block;
+   margin-top: 20px;
+   margin-bottom: -10px;
+   border: none;
+}
+ 
+.pagination a {
+   color: black;
+   background-color: #ffffff55;
+   float: left;
+   padding: 8px 16px;
+   transition: background-color .3s;
+   margin: 0 4px;
+}
+ 
+.pagination a.active {
+   background-color: #6eb7ac;
+   color: white;
+   
+}
+ 
+.pagination a:hover:not(.active) {
+   background-color: #fff;
 }
 
 /* Footer */
